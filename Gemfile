@@ -1,7 +1,15 @@
-# A sample Gemfile
+require_relative 'config/environment'
+
+class App < Sinatra::Base
+
+  get '/' do 
+    "Welcome to your app!!!! "
+  end
+
+end
 source "https://rubygems.org"
 
-# gem "rails"
+gem "rails"
 
 gem 'sinatra'
 gem 'rake'
